@@ -53,7 +53,7 @@ To put all the code, go on `layer > Action > add Python action`, then paste the 
 	def get_google_bearing(ang) :
 	    ang2 = ang - 90 # + 90° à cause de google. 0° sur Google correspond à 90°
 	    ang3 = -ang2
-	    delta = abs((180 - abs(ang3))) # différence par rapport au Sud
+	    delta = abs((180 - abs(ang3))) # angle difference with south
 	    
 	    if ang3 > 180  :
 	        ang4 = -180 + delta
@@ -93,8 +93,7 @@ To put all the code, go on `layer > Action > add Python action`, then paste the 
 	    # google street view url
 	    mode = 12
 	    url = ("https://www.google.com/maps?layer=c&cbll=%f,%f&cbp=%f,%f,0,0,0")%(lat1, lon1, mode, ang_google)
-	    # url='https://www.google.fr/%d&%d'%(1, 2)
-	    webbrowser.open(url)  # Go to example.com
+	    webbrowser.open(url)  # Go to street view url
 	
 	    
 	# a reference to our map canvas 
