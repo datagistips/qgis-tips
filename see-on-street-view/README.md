@@ -20,18 +20,18 @@ The python code includes angle transformation function to get correct google bea
 The way Google formulates bearings is quite special
 
 	def get_google_bearing(ang) :
-		    ang2 = ang - 90 # + 90° # 0° sur Google correspond à 90°
-		    ang3 = -ang2
-		    delta = abs((180 - abs(ang3))) # différence par rapport au Sud
-		    
-		    if ang3 > 180  :
-		        ang4 = -180 + delta
-		    elif ang3 < -180 :
-		        ang4 = 180 - delta,
-		    else :
-		        ang4 = ang3
-		    
-		    return(ang4)
+	    ang2 = ang - 90 # + 90° # 0° sur Google correspond à 90°
+	    ang3 = -ang2
+	    delta = abs((180 - abs(ang3))) # différence par rapport au Sud
+	    
+	    if ang3 > 180  :
+	        ang4 = -180 + delta
+	    elif ang3 < -180 :
+	        ang4 = 180 - delta,
+	    else :
+	        ang4 = ang3
+	    
+	    return(ang4)
 
 To put all the code, go on `layer > Action > add Python action`, then paste the following code :
 
