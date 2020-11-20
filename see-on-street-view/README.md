@@ -1,10 +1,10 @@
 # See on Street View
 
+Just download the complete repository and open `see-on-street-view.qgs`. Everything is included in it.
+
 This project enables you to activate a "See on Street View" action on a layer.
 
 Just click on the object where you want to look, and here you go !
-
-Just download the complete repository and open `see-on-street-view.qgs`
 
 ## Where the pegman will look
 If the layer is polygonal, the pegman will look at the centroid of the object.
