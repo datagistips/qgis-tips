@@ -120,7 +120,7 @@ To put all the code, go on `layer > Action > add Python action`, then paste the 
 
 
 # Coordinates transformation between two EPSGs
-You can notice I added a coordinates transformation helper function which, by default, transforms from `EPSG:3857` to `EPSG:4326`
+You can notice I added a coordinates transformation helper function which, by default, transforms from `EPSG:3857` to `EPSG:4326`, in case you need you need to tranform the source click coordinates or the target feature centroid coordinates
 
 	def transform_crs(lon1, lat1, epsg1=3857, epsg2=4326):
 	    geom = QgsGeometry(QgsPoint(lon1, lat1))
