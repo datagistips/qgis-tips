@@ -6,8 +6,6 @@ Just click on the object where you want to look, and here you go !
 
 Just download the complete repository and open `see-on-street-view.qgs`
 
-[[_TOC_]]
-
 ## Where the pegman will look
 If the layer is polygonal, the pegman will look at the centroid of the object.
 
